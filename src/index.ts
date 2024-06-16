@@ -42,6 +42,6 @@ io.on('connection', (socket: Socket) => {
 });
 // 172.20.10.2
 // 192.168.1.104
-server.listen(3000,() => {
+server.listen(8000,()=>{
     console.log('listening on *:3000');
 });
