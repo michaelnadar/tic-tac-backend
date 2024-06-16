@@ -54,7 +54,7 @@ interface Room{
     }
 
     clearQueue(){
-       // console.log(this.queue.length);
+       console.log(this.queue.length);
         if(this.queue.length < 2){
             return;
         }
@@ -117,7 +117,7 @@ interface Room{
             });
             socket.on('answer-client',({room,answer})=>{
                 // client-answer
-                console.log(room,answer);
+               // console.log(room,answer);
                 const roomId = room?.toString();
                 const rooom = this.room.get(roomId);
                 const user = rooom?.user1.socket.id === socket.id ? rooom.user2 :rooom?.user1;
